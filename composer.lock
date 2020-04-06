@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9e8baa406706690197f36bcf9c4046e",
+    "content-hash": "609f612de74f0f4e26880f7970d6bd3a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -57,6 +57,83 @@
                 "stack"
             ],
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "bavix/laravel-wallet",
+            "version": "5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bavix/laravel-wallet.git",
+                "reference": "7a5fabe1bcf66128748293fd74e607d67eecee48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bavix/laravel-wallet/zipball/7a5fabe1bcf66128748293fd74e607d67eecee48",
+                "reference": "7a5fabe1bcf66128748293fd74e607d67eecee48",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.8",
+                "ext-pdo": "*",
+                "illuminate/database": "^6.0|^7.0",
+                "php": "^7.2|^8.0",
+                "ramsey/uuid": "^3.0|^4.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.15",
+                "laravel/cashier": "^10.0",
+                "orchestra/testbench": "^4.0|^5.0",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "suggest": {
+                "bavix/laravel-wallet-swap": "Addition to the laravel-wallet library for quick setting of exchange rates",
+                "bavix/laravel-wallet-vacuum": "Addition to the laravel-wallet library for quick fix race condition",
+                "ext-bcmath": "Used for accurate calculations of large numbers"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "5.0.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Bavix\\Wallet\\WalletServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bavix\\Wallet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Babichev Maxim",
+                    "email": "info@babichev.net"
+                }
+            ],
+            "description": "Easy work with virtual wallet.",
+            "homepage": "https://bavix.github.io/laravel-wallet/",
+            "keywords": [
+                "bavix",
+                "credits",
+                "currency",
+                "laravel",
+                "laravel-wallet",
+                "laravel6",
+                "laravel6-package",
+                "laravel7",
+                "laravel7-package",
+                "payments",
+                "virtual",
+                "wallet"
+            ],
+            "time": "2020-03-26T17:25:03+00:00"
         },
         {
             "name": "brick/math",
