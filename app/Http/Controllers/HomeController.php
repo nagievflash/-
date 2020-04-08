@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        auth()->user()->withdraw(10);
         return view('home');
     }
 }

@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Ваш баланс:
+                    {{ Auth::user()->balance }}
                 </div>
             </div>
         </div>
