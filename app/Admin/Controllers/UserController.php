@@ -7,6 +7,7 @@ use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use App\Admin\Actions\User\Deposit;
 
 class UserController extends AdminController
 {
@@ -15,7 +16,7 @@ class UserController extends AdminController
      *
      * @var string
      */
-    protected $title = 'App\User';
+    protected $title = 'Пользователи';
 
     /**
      * Make a grid builder.
@@ -30,6 +31,15 @@ class UserController extends AdminController
         $grid->column('name', __('Имя'))->editable();
         $grid->column('wallet.balance', __('Баланс'));
         $grid->column('email', __('Email'))->editable();
+
+        $grid->disableFilter();
+
+        $grid->actions(function ($actions) {
+            $actions->add(new Deposit);
+            $actions->disableEdit();
+            $actions->disableView();
+        });
+        $grid->quickSearch('id', 'name', 'email');
 
         return $grid;
     }

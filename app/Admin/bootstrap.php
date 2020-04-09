@@ -17,5 +17,7 @@
  * Admin::js('/packages/prettydocs/js/main.js');
  *
  */
-
-Encore\Admin\Form::forget(['map', 'editor']);
+use Encore\Admin\Grid\Column;
+Column::define('deposit', function () {
+    return 'column content';
+});
