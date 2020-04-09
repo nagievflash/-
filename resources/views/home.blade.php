@@ -15,7 +15,7 @@
                     @endif
 
                     Ваш баланс:
-                    {{ Auth::user()->balance }}
+                    {!! Auth::user()->balance !!}
                 </div>
             </div>
         </div>
