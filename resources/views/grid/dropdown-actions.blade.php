@@ -1,6 +1,6 @@
 <div class="grid-dropdown-actions dropdown">
 
-    <ul class="actions-menu" style="min-width: 70px !important;border-radius:0;left: -65px;top: 5px; padding-left:0">
+    <ul class="actions-menu" style="min-width: 70px !important;border-radius:0;left: -65px;margin-top:8px; padding-left:0">
 
 
         @if(!empty($custom))
@@ -14,6 +14,6 @@
         @foreach($default as $action)
         {!! $action->render() !!}
         @endforeach
-        
+
     </ul>
 </div>

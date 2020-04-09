@@ -5701,3 +5701,10 @@ th.column-__actions__ {
     background-color: #449d44;
     border-color: #255625;
 }
+.table.table-hover tr td:not(.column-__actions__) {
+    vertical-align: middle;
+    padding-top:0;
+}
+.main-footer {
+    display:none!important
+}

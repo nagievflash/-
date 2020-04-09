@@ -18,6 +18,3 @@
  *
  */
 use Encore\Admin\Grid\Column;
-Column::define('deposit', function () {
-    return 'column content';
-});
